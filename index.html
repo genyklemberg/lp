@@ -23,6 +23,14 @@
     <!-- Theme CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKRD2LT');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,6 +41,11 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKRD2LT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -180,12 +193,14 @@
                     <h2>You are playing <span class="light brand-logo">CS, Dota 2, LoL</span> or maybe something else?</h2>
                     <p>we will try to give what you need, just be part of our community</p>
                     <p id="USER_COUNT"></p>
-                    <form id="form" class="form-email" name="form-email" method="post" data-position="main" action="">
+                    <form id="form" class="form-email" action="" method="post" data-position="main">
                         <div class="row earlyaccess-box">
                             <div class="input-group col-md-6 col-xs-6">
+                                <input type="name" name="name" value="ANY" style="display:none">
+                                <input type="message" name="message" value="N/A" style="display:none">
                                 <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" required>
                                 <span class="input-group-btn">
-                                    <button class="btn btn-color btn-invite" type="submit" form="form-email" value="Submit">Get Invite</button>
+                                    <button class="btn btn-color btn-invite" type="submit">Get Invite</button>
                                 </span>
                             </div>
                         </div>

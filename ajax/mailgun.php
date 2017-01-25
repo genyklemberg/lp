@@ -36,12 +36,13 @@ function ajaxResponse($status, $message, $data = NULL, $mg = NULL) {
 function sendMailgun($data) {
 
   $api_key = 'key-685c46166f0607fbf761f2ce8b4329a0';
-  $api_domain = 'sandbox4f0d1573738a4c02816238a129149267.mailgun.org';
-  $send_to = 'y.potupa@gmail.com';
+  $api_domain = 'cybergates.gg';
+  $send_to = 'info@cybergates.gg';
 
   $name = $data['name'];
   $email = $data['email'];
-  $content = $data['message'];
+  $content = $data['message'];  
+  
   // $usercount = $data['usercount'];
 
   // function changeCount() {
