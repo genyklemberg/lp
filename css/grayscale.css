@@ -9,6 +9,7 @@ body {
   font-family: "Montserrat", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   background-color: black;
+  overflow-x: hidden;
 }
 html {
   width: 100%;
@@ -157,10 +158,15 @@ a:hover .network-name{
     font-size: 22px;
   }
 }
+/*          additional       */
+#email, #name, #message {
+  background-color: white;
+  opacity: 0.7;
+}
 
 #c-pic {
   background-image: url(../img/logo.jpg);
-  background-position: 40% 1%;
+  background-position: 39% 1%;
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
@@ -176,9 +182,9 @@ a:hover .network-name{
   height: 50%;
   z-index: -1;
 }
+/*          additional end       */
 
 /*          fonts       */
-
 @font-face {
   font-family: 'Montalban';
   /*src: url('../fonts/airborne/airborne.ttf');*/
@@ -303,16 +309,18 @@ a:hover .network-name{
 #btn-starter {
   border-radius: 0 0 5px 5px;
   margin-top: 2px;
-  background-color: #98d9ef;
-  color: #111;
+  background-color: transparent;
+  color: #98d9ef;
   font-weight: 900;  
+  opacity: 0.7;
   transition: background-color 0.3s ease;
 }
 
 #btn-starter:hover {
   border: 2px solid #98d9ef;
-  background-color: transparent;
-  color: #98d9ef;
+  background-color: #98d9ef;
+  opacity: 0.7;
+  color: #111;
   font-weight: 900;  
 }
 
@@ -324,11 +332,13 @@ button.btn-invite{
   border-top-right-radius: 5px;
   background-color: transparent;
   color: #98d9ef;
+  opacity: 0.7;
   border: #98d9ef 1px solid;
 }
 button.btn-invite:hover{
   background-color: #98d9ef;
   color: black;
+  opacity: 0.7;
   font-weight: 900;
 }
 

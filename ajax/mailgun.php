@@ -37,20 +37,11 @@ function sendMailgun($data) {
 
   $api_key = 'key-685c46166f0607fbf761f2ce8b4329a0';
   $api_domain = 'cybergates.gg';
-  $send_to = 'info@cybergates.gg';
+  $send_to = 'aputop@yahoo.com';
 
   $name = $data['name'];
   $email = $data['email'];
   $content = $data['message'];  
-  
-  // $usercount = $data['usercount'];
-
-  // function changeCount() {
-  //   $fp = fopen("data.txt", "a");
-  //   fwrite($fp, "$count"\t "$name"\t "$email"\t "$city"\n);
-  //   fclose($fp);
-  // }
-
 
   $messageBody = "Contact: $name ($email)\n\nMessage: $content";
 
