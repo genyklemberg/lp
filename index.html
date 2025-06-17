@@ -95,7 +95,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <form class="form" id="mailgun" method="POST">
                                 <em class="form-control" id="form-label">Join our beta list, launching soon.</em>
                                 <label class="sr-only" for="name">Name</label>
-                                <input type="name" id="name" name="name" placeholder="Name" class="form-control" required>
+                                <input type="text" id="name" name="name" placeholder="Name" class="form-control" required>
                                 <label class="sr-only" for="email">Email</label>
                                 <input type="email" id="email" name="email" placeholder="Email" class="form-control" required>
                                 <textarea id="message" name="message" placeholder="What you hope to find here?" class="form-control"></textarea> 
@@ -197,8 +197,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <form id="form" class="form-email" action="" method="post" data-position="main">
                         <div class="row earlyaccess-box">
                             <div class="input-group col-md-6 col-xs-6">
-                                <input type="name" name="name" value="ANY" style="display:none">
-                                <input type="message" name="message" value="N/A" style="display:none">
+                                <input type="hidden" name="name" value="ANY">
+                                <input type="hidden" name="message" value="N/A">
                                 <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" required>
                                 <span class="input-group-btn">
                                     <button class="btn btn-color btn-invite" type="submit">Get Invite</button>
